@@ -121,32 +121,64 @@ main{
        background-image: url("Imagenes/choper-leche-no-fondo.png");
        background-repeat: no-repeat;
        border: none;
-       border-radius: 12px; /* reducir borde */
+       border-radius: 24px ; /* reducir borde */
        color: #edb866;
-       margin-left: 0; /* eliminar margen izquierdo */
+       margin-left: 98px ; /* eliminar margen izquierdo */
        margin-top: 20px;
-       padding-left: 10px; /* reducir padding */
-       position: relative; /* cambiar a relative */
+       padding-left: 10px ; /* reducir padding */
+       position: fixed; /* cambiar a relative */
+    }
+    .mensaje:focus{
+        outline: none;
     }
  
     .botones {
-       display: block; /* cambiar a block */
+       display: flex; /* cambiar a block */
+       justify-content: center;
        margin-top: 18px;
     }
  
-    .btn-desencriptar, .btn-encriptar {
-       height: 50px; /* reducir alto */
-       width: 100%; /* ocupar todo el ancho */
-    }
- 
-    .btn-copiar {
-       margin-left: 0; /* eliminar margen izquierdo */
-       margin-top: 20px; /* reducir margen superior */
-       position: relative; /* cambiar a relative */
-    }
- 
     .informacion {
-       font-size: 16px; /* reducir tamaño de fuente */
+       font-size: 16px; 
     }
- }
+    .btn-desencriptar{
+        background: #D8DFE8;
+        border: 1px solid #33c1ef;
+        border-radius: 24px;
+        cursor: pointer;
+        height: 67px;
+        margin-right: 10px;
+        width: 328px;
+    }
+    
+    .btn-encriptar{
+        background-color: #33c1ef;
+        border: 1px solid #33c1ef;
+        border-radius: 24px;
+        color: white;
+        cursor: pointer;
+        height: 67px;
+        margin-left: 10px;
+        width: 328px;
+    }
+    .btn-copiar{
+        background: #e99082;
+        border: 1px solid #33c1ef;
+        border-radius: 24px;
+        color: #33c1ef;
+        cursor: pointer;
+        height: 67px;
+        width: 336px;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+    }
+    
+    .informacion{
+        color: #33c1ef;
+        font-size: 18px; /* reducir tamaño de fuente */
+    }
+}
  
