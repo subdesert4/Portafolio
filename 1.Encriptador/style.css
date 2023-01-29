@@ -117,17 +117,21 @@ main{
     }
  
     .mensaje {
-       background: white;
-       background-image: url("Imagenes/choper-leche-no-fondo.png");
-       background-repeat: no-repeat;
-       border: none;
-       border-radius: 24px ; /* reducir borde */
-       color: #edb866;
-       margin-left: 98px ; /* eliminar margen izquierdo */
-       margin-top: 20px;
-       padding-left: 10px ; /* reducir padding */
-       position: fixed; /* cambiar a relative */
-    }
+        background: white;
+        background-image: url("Imagenes/choper-leche-no-fondo.png");
+        background-repeat: no-repeat;
+        background-position: center; /*para centrar la imagen*/
+        background-size: contain; /* para achicar la imagen */
+        border: none;
+        border-radius: 24px;
+        color: #edb866;
+        margin: 0 auto; /*para centrar horizontalmente */
+        margin-top: 20px;
+        padding-left: 10px;
+        position: relative; /* cambiar a relative */
+        text-align: center; /*para centrar el texto */
+        width: 80%; /*para reducir el ancho del contenedor */
+        }
     .mensaje:focus{
         outline: none;
     }
