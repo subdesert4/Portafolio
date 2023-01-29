@@ -90,3 +90,63 @@ main{
     font-size: 18px;
 }
 
+@media only screen and (max-width: 767px) {
+    *{
+       background: #edb866;
+       font-family: 'Inter';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 20px; /* reducir el tamaño de fuente */
+       line-height: 120%;
+    }
+ 
+    .logo {
+       padding-top: 10px;
+       margin-left: 10px;
+       width: 25%; /* aumentar el ancho */
+    }
+ 
+    main {
+       display: block; /* cambiar a block */
+       margin-bottom: 50px;
+       margin-left: 0; /* eliminar margen izquierdo */
+    }
+ 
+    .text-area {
+       margin-top: 20px; /* reducir margen superior */
+    }
+ 
+    .mensaje {
+       background: white;
+       background-image: url("Imagenes/choper-leche-no-fondo.png");
+       background-repeat: no-repeat;
+       border: none;
+       border-radius: 12px; /* reducir borde */
+       color: #edb866;
+       margin-left: 0; /* eliminar margen izquierdo */
+       margin-top: 20px;
+       padding-left: 10px; /* reducir padding */
+       position: relative; /* cambiar a relative */
+    }
+ 
+    .botones {
+       display: block; /* cambiar a block */
+       margin-top: 18px;
+    }
+ 
+    .btn-desencriptar, .btn-encriptar {
+       height: 50px; /* reducir alto */
+       width: 100%; /* ocupar todo el ancho */
+    }
+ 
+    .btn-copiar {
+       margin-left: 0; /* eliminar margen izquierdo */
+       margin-top: 20px; /* reducir margen superior */
+       position: relative; /* cambiar a relative */
+    }
+ 
+    .informacion {
+       font-size: 16px; /* reducir tamaño de fuente */
+    }
+ }
+ 
